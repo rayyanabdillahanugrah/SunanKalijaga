@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kupas Tuntas Sunan Kalijaga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=IM+Fell+English:ital@0;1&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Batik texture overlay -->
+  <div class="texture-overlay" aria-hidden="true"></div>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="nav-ornament">❧</span>
+        <span>Sunan Kalijaga</span>
+        <span class="nav-ornament">❧</span>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link">Beranda</a></li>
+        <li><a href="#biografi" class="nav-link">Biografi</a></li>
+        <li><a href="#perjalanan" class="nav-link">Perjalanan</a></li>
+        <li><a href="#sifat" class="nav-link">Kepribadian</a></li>
+        <li><a href="#dakwah" class="nav-link">Metode Dakwah</a></li>
+        <li><a href="#warisan" class="nav-link">Warisan</a></li>
+        <li><a href="#hikmah" class="nav-link">Hikmah</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <header class="hero" id="hero">
+    <div class="hero-ornament-top" aria-hidden="true">
+      <svg viewBox="0 0 800 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,30 Q100,0 200,30 Q300,60 400,30 Q500,0 600,30 Q700,60 800,30" stroke="#C8963E" stroke-width="1.5" fill="none" opacity="0.6"/>
+        <path d="M0,38 Q100,8 200,38 Q300,68 400,38 Q500,8 600,38 Q700,68 800,38" stroke="#C8963E" stroke-width="0.8" fill="none" opacity="0.3"/>
+        <circle cx="100" cy="15" r="3" fill="#C8963E" opacity="0.5"/>
+        <circle cx="300" cy="45" r="3" fill="#C8963E" opacity="0.5"/>
+        <circle cx="500" cy="15" r="3" fill="#C8963E" opacity="0.5"/>
+        <circle cx="700" cy="45" r="3" fill="#C8963E" opacity="0.5"/>
+        <circle cx="200" cy="30" r="5" fill="#C8963E" opacity="0.4"/>
+        <circle cx="400" cy="30" r="5" fill="#C8963E" opacity="0.4"/>
+        <circle cx="600" cy="30" r="5" fill="#C8963E" opacity="0.4"/>
+      </svg>
+    </div>
+
+    <div class="hero-content reveal">
+      <p class="hero-sub">Wali Songo · Penyebar Islam di Tanah Jawa</p>
+      <div class="hero-divider" aria-hidden="true">
+        <span class="divider-line"></span>
+        <svg class="divider-icon" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="8" fill="none" stroke="#C8963E" stroke-width="1.5"/>
+          <path d="M20,4 L20,36 M4,20 L36,20" stroke="#C8963E" stroke-width="0.8"/>
+          <path d="M8,8 L32,32 M32,8 L8,32" stroke="#C8963E" stroke-width="0.6" opacity="0.5"/>
+        </svg>
+        <span class="divider-line"></span>
+      </div>
+      <h1 class="hero-title">Sunan<br/>Kalijaga</h1>
+      <p class="hero-tagline"><em>"Dakwah melalui seni, budaya, dan hati yang lapang."</em></p>
+      <div class="hero-meta">
+        <div class="meta-item">
+          <span class="meta-label">Nama Asli</span>
+          <span class="meta-value">Raden Mas Said</span>
+        </div>
+        <div class="meta-sep" aria-hidden="true">◆</div>
+        <div class="meta-item">
+          <span class="meta-label">Lahir</span>
+          <span class="meta-value">Tuban, Abad XV</span>
+        </div>
+        <div class="meta-sep" aria-hidden="true">◆</div>
+        <div class="meta-item">
+          <span class="meta-label">Peran</span>
+          <span class="meta-value">Wali &amp; Budayawan</span>
+        </div>
+      </div>
+      <a href="#biografi" class="hero-cta">
+        Mulai Menjelajah
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="hero-ornament-bottom" aria-hidden="true">
+      <svg viewBox="0 0 800 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,30 Q100,60 200,30 Q300,0 400,30 Q500,60 600,30 Q700,0 800,30" stroke="#C8963E" stroke-width="1.5" fill="none" opacity="0.6"/>
+      </svg>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <span></span>
+    </div>
+  </header>
+
+  <!-- ====== BIOGRAFI ====== -->
+  <section class="section" id="biografi">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">I</span>
+        <h2 class="section-title">Mengenal Sunan Kalijaga</h2>
+        <div class="section-ornament" aria-hidden="true">✦ ✦ ✦</div>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="22" r="10" stroke="#C8963E" stroke-width="1.5" fill="none"/>
+              <path d="M10,50 Q30,34 50,50" stroke="#C8963E" stroke-width="1.5" fill="none"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Siapa Sunan Kalijaga?</h3>
+          <p class="card-text">Sunan Kalijaga merupakan salah satu tokoh Wali Songo yang memiliki peran sangat besar dalam penyebaran agama Islam di Pulau Jawa. Beliau dikenal sebagai wali yang bijaksana dengan pendekatan budaya dalam berdakwah — menyampaikan ajaran Islam melalui seni, tradisi, dan cara-cara yang dekat dengan kehidupan masyarakat Jawa.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15,10 L45,10 L45,50 L15,50 Z" stroke="#C8963E" stroke-width="1.5" fill="none"/>
+              <path d="M15,10 L30,4 L45,10" stroke="#C8963E" stroke-width="1.5" fill="none"/>
+              <line x1="22" y1="22" x2="38" y2="22" stroke="#C8963E" stroke-width="1.2"/>
+              <line x1="22" y1="30" x2="38" y2="30" stroke="#C8963E" stroke-width="1.2"/>
+              <line x1="22" y1="38" x2="32" y2="38" stroke="#C8963E" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Asal-Usul &amp; Nama</h3>
+          <p class="card-text">Nama asli beliau adalah <strong>Raden Mas Said</strong> atau Raden Syahid, lahir di Tuban, Jawa Timur sekitar abad ke-15. Ayahnya adalah Tumenggung Wilatikta, seorang adipati Tuban di era Majapahit. Nama "Kalijaga" berarti "menjaga kali (sungai)" — berasal dari kisah ketika beliau diperintahkan menjaga tongkat Sunan Bonang di tepi sungai sebagai ujian kesabaran.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30,10 L50,50 L10,50 Z" stroke="#C8963E" stroke-width="1.5" fill="none"/>
+              <circle cx="30" cy="36" r="6" stroke="#C8963E" stroke-width="1.2" fill="none"/>
+              <line x1="30" y1="22" x2="30" y2="28" stroke="#C8963E" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Latar Belakang Keluarga</h3>
+          <p class="card-text">Berasal dari keluarga bangsawan terpandang, Raden Said mendapat pendidikan dalam bidang pemerintahan, agama, sastra, dan seni budaya Jawa. Meski hidup berkecukupan, beliau sangat peduli terhadap rakyat kecil yang menderita akibat ketidakadilan — sifat inilah yang menjadi dasar kepribadiannya sebagai seorang wali.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="30" r="18" stroke="#C8963E" stroke-width="1.5" fill="none"/>
+              <path d="M20,30 Q30,16 40,30 Q30,44 20,30" stroke="#C8963E" stroke-width="1.2" fill="none"/>
+              <circle cx="30" cy="30" r="3" fill="#C8963E" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Kondisi Jawa Kala Itu</h3>
+          <p class="card-text">Masa hidup Sunan Kalijaga adalah masa transisi besar: Kerajaan Majapahit mulai mundur, sementara Islam berkembang pesat di pesisir Jawa. Masyarakat masih kuat memegang budaya Hindu-Buddha dan kepercayaan tradisional. Inilah mengapa pendekatan budaya menjadi kunci keberhasilan penyebaran Islam di tanah Jawa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PERJALANAN HIDUP ====== -->
+  <section class="section section-alt" id="perjalanan">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">II</span>
+        <h2 class="section-title">Perjalanan Hidup</h2>
+        <div class="section-ornament" aria-hidden="true">✦ ✦ ✦</div>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal" data-side="left">
+          <div class="timeline-dot" aria-hidden="true">
+            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="8" stroke="#C8963E" stroke-width="1.5" fill="#FAF5EC"/>
+              <circle cx="10" cy="10" r="3" fill="#C8963E"/>
+            </svg>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-era">Masa Kecil</span>
+            <h3 class="timeline-title">Raden Said Muda</h3>
+            <p>Tumbuh cerdas dan peka terhadap penderitaan rakyat di sekitar Tuban. Meski berasal dari keluarga bangsawan, Raden Said sangat gelisah melihat ketimpangan: pejabat bermewah-mewah sementara rakyat membayar pajak berat. Beliau menyukai kesenian dan budaya Jawa sejak muda — benih yang akan berkembang dalam dakwahnya kelak.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-side="right">
+          <div class="timeline-dot" aria-hidden="true">
+            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="8" stroke="#C8963E" stroke-width="1.5" fill="#FAF5EC"/>
+              <circle cx="10" cy="10" r="3" fill="#C8963E"/>
+            </svg>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-era">Masa Remaja</span>
+            <h3 class="timeline-title">Lokajaya sang Pendekar</h3>
+            <p>Raden Said sempat dikenal sebagai Lokajaya — seorang yang merampok para pejabat dan orang kaya untuk diberikan kepada rakyat miskin. Niatnya mulia, namun jalannya keliru. Kegelisahan batinnya akan keadilan sosial mendorongnya mencari makna yang lebih dalam tentang kebenaran.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-side="left">
+          <div class="timeline-dot" aria-hidden="true">
+            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="8" stroke="#C8963E" stroke-width="1.5" fill="#FAF5EC"/>
+              <circle cx="10" cy="10" r="3" fill="#C8963E"/>
+            </svg>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-era">Titik Balik</span>
+            <h3 class="timeline-title">Pertemuan dengan Sunan Bonang</h3>
+            <p>Perubahan besar terjadi ketika Lokajaya bertemu Sunan Bonang di hutan. Ia berniat merampok tongkat yang dikira emas, namun Sunan Bonang menunjukkan kebijaksanaan dan kesaktiannya — bahwa harta dunia bukan tujuan hidup. Nasihat tenang Sunan Bonang menyentuh hati Lokajaya, membuatnya memohon menjadi murid.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-side="right">
+          <div class="timeline-dot" aria-hidden="true">
+            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="8" stroke="#C8963E" stroke-width="1.5" fill="#FAF5EC"/>
+              <circle cx="10" cy="10" r="3" fill="#C8963E"/>
+            </svg>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-era">Pembentukan</span>
+            <h3 class="timeline-title">Proses Menjadi Wali</h3>
+            <p>Sunan Bonang memberikan berbagai ujian: salah satunya memerintahkan Raden Said menjaga tongkat di tepi sungai dan tidak boleh pergi sebelum gurunya kembali. Dengan kesabaran dan kesetiaan luar biasa, beliau menjalankan amanah tersebut hingga bertahun-tahun. Dari keteguhan inilah lahir nama "Kalijaga" — sang penjaga sungai.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-side="left">
+          <div class="timeline-dot" aria-hidden="true">
+            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="8" stroke="#C8963E" stroke-width="1.5" fill="#FAF5EC"/>
+              <circle cx="10" cy="10" r="3" fill="#C8963E"/>
+            </svg>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-era">Puncak Dakwah</span>
+            <h3 class="timeline-title">Sunan Kalijaga Berdakwah</h3>
+            <p>Setelah matang dalam ilmu agama dan spiritual, Sunan Kalijaga menyebarkan Islam di seluruh Jawa dengan dakwah kultural: menggunakan wayang kulit, gamelan, tembang Jawa, tradisi sekaten, dan seni ukir sebagai media. Pendekatannya yang lembut dan bijaksana membuat Islam diterima luas tanpa menimbulkan pertentangan di masyarakat.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SIFAT & KEPRIBADIAN ====== -->
+  <section class="section" id="sifat">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">III</span>
+        <h2 class="section-title">Sifat &amp; Kepribadian</h2>
+        <div class="section-ornament" aria-hidden="true">✦ ✦ ✦</div>
+      </div>
+
+      <div class="traits-grid">
+
+        <div class="trait-card reveal" data-trait="bijaksana">
+          <div class="trait-header">
+            <div class="trait-icon" aria-hidden="true">
+              <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="18" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                <path d="M14,42 Q25,30 36,42" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                <path d="M25,10 L25,6 M17,13 L14,10 M33,13 L36,10" stroke="currentColor" stroke-width="1.2"/>
+              </svg>
+            </div>
+            <h3 class="trait-name">Bijaksana</h3>
+          </div>
+          <p>Dalam setiap langkah dakwah, Sunan Kalijaga selalu mempertimbangkan keadaan masyarakat. Beliau tidak memaksa perubahan yang tiba-tiba, melainkan menggunakan pendekatan bertahap, lembut, dan penuh kesabaran — memahami bahwa perubahan keyakinan membutuhkan waktu dan kasih sayang.</p>
+        </div>
+
+        <div class="trait-card reveal" data-trait="toleransi">
+          <div class="trait-header">
+            <div class="trait-icon" aria-hidden="true">
+              <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18" cy="25" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                <circle cx="32" cy="25" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              </svg>
+            </div>
+            <h3 class="trait-name">Toleransi Tinggi</h3>
+          </div>
+          <p>Sunan Kalijaga menghargai adat dan budaya masyarakat selama tidak bertentangan dengan Islam. Beliau tidak memandang perbedaan sebagai musuh. Sikap ini membuat Islam diterima oleh masyarakat Jawa dari berbagai latar belakang kepercayaan secara damai dan tulus.</p>
+        </div>
+
+        <div class="trait-card reveal" data-trait="kreatif">
+          <div class="trait-header">
+            <div class="trait-icon" aria-hidden="true">
+              <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10,35 Q18,10 25,25 Q32,40 40,15" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                <circle cx="25" cy="25" r="3" fill="currentColor" opacity="0.7"/>
+                <path d="M38,12 L42,8 L46,16 L38,12" stroke="currentColor" stroke-width="1.2" fill="none"/>
+              </svg>
+            </div>
+            <h3 class="trait-name">Kreatif</h3>
+          </div>
+          <p>Sunan Kalijaga memanfaatkan wayang kulit, gamelan, tembang, dan tradisi sekaten sebagai media dakwah yang inovatif. Beliau membuktikan bahwa kreativitas adalah alat dakwah yang ampuh — mengemas pesan agama dalam balutan seni yang menyentuh hati masyarakat.</p>
+        </div>
+
+        <div class="trait-card reveal" data-trait="sederhana">
+          <div class="trait-header">
+            <div class="trait-icon" aria-hidden="true">
+              <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15,40 L15,20 L25,10 L35,20 L35,40 Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                <rect x="20" y="28" width="10" height="12" stroke="currentColor" stroke-width="1.2" fill="none"/>
+              </svg>
+            </div>
+            <h3 class="trait-name">Sederhana &amp; Rendah Hati</h3>
+          </div>
+          <p>Walaupun sangat terkenal dan dihormati, Sunan Kalijaga tetap hidup sederhana dan rendah hati. Beliau berpakaian seperti rakyat biasa, sering mengunjungi desa-desa, dan berbicara langsung dengan warga. Tidak ada kesombongan dalam diri seorang wali besar ini.</p>
+        </div>
+
+        <div class="trait-card reveal" data-trait="peduli">
+          <div class="trait-header">
+            <div class="trait-icon" aria-hidden="true">
+              <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25,38 L12,26 Q8,16 18,14 Q22,13 25,18 Q28,13 32,14 Q42,16 38,26 Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              </svg>
+            </div>
+            <h3 class="trait-name">Peduli Rakyat</h3>
+          </div>
+          <p>Sejak muda, Sunan Kalijaga sangat peduli terhadap rakyat kecil. Beliau tidak membedakan status sosial dalam pergaulan — petani, pedagang, nelayan, dan bangsawan diperlakukan setara dengan penuh kasih sayang. Karena sifat ini, masyarakat merasa beliau bukan sekadar ulama, tetapi juga sahabat dan pelindung mereka.</p>
+        </div>
+
+        <div class="trait-card reveal" data-trait="teladan">
+          <div class="trait-header">
+            <div class="trait-icon" aria-hidden="true">
+              <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="25,8 30,20 43,20 33,28 37,41 25,33 13,41 17,28 7,20 20,20" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              </svg>
+            </div>
+            <h3 class="trait-name">Nilai Teladan</h3>
+          </div>
+          <p>Dari Sunan Kalijaga, generasi muda dapat belajar: berpikir sebelum bertindak, menghargai perbedaan, menggunakan kreativitas untuk kebaikan, serta bersikap rendah hati meski berprestasi. Nilai-nilai ini masih sangat relevan di tengah kehidupan modern yang kompleks.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== METODE DAKWAH ====== -->
+  <section class="section section-alt" id="dakwah">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">IV</span>
+        <h2 class="section-title">Metode Dakwah</h2>
+        <div class="section-ornament" aria-hidden="true">✦ ✦ ✦</div>
+      </div>
+
+      <div class="dakwah-intro reveal">
+        <p>Sunan Kalijaga menggunakan <em>dakwah kultural</em> — pendekatan yang memasukkan nilai-nilai Islam ke dalam tradisi dan seni budaya Jawa yang sudah dicintai masyarakat. Beliau percaya bahwa masyarakat akan lebih mudah menerima ajaran agama apabila disampaikan melalui budaya yang sudah akrab dengan kehidupan mereka.</p>
+      </div>
+
+      <div class="dakwah-grid">
+
+        <div class="dakwah-card reveal">
+          <div class="dakwah-num" aria-hidden="true">01</div>
+          <h3 class="dakwah-title">Wayang Kulit</h3>
+          <p>Media dakwah paling berpengaruh. Sunan Kalijaga mengubah bentuk wayang yang awalnya menyerupai manusia menjadi siluet pipih agar sesuai syariat Islam. Cerita Mahabharata dan Ramayana tetap dipakai, namun pesan moralnya diarahkan pada ajaran Islam. Tokoh Punakawan — Semar, Gareng, Petruk, dan Bagong — dijadikan simbol nasihat dan kebijaksanaan hidup.</p>
+          <div class="dakwah-tag">Seni Pertunjukan</div>
+        </div>
+
+        <div class="dakwah-card reveal">
+          <div class="dakwah-num" aria-hidden="true">02</div>
+          <h3 class="dakwah-title">Tembang Jawa</h3>
+          <p>Sunan Kalijaga menciptakan karya sastra tembang yang sarat makna. Yang paling terkenal adalah <em>Lir-Ilir</em> — sebuah tembang yang mengandung pesan tentang semangat memperbaiki diri dan mendekatkan diri kepada Allah. Juga <em>Gundul-Gundul Pacul</em> yang mengajarkan tentang kepemimpinan dan tanggung jawab.</p>
+          <div class="dakwah-tag">Seni Sastra</div>
+        </div>
+
+        <div class="dakwah-card reveal">
+          <div class="dakwah-num" aria-hidden="true">03</div>
+          <h3 class="dakwah-title">Tradisi Sekaten</h3>
+          <p>Sunan Kalijaga menggunakan perayaan Sekaten (memperingati hari kelahiran Nabi Muhammad SAW) sebagai sarana dakwah. Pertunjukan gamelan di halaman masjid menarik masyarakat datang berbondong-bondong. Di situlah mereka secara perlahan diperkenalkan pada ajaran Islam melalui suasana yang meriah dan menyenangkan.</p>
+          <div class="dakwah-tag">Tradisi Budaya</div>
+        </div>
+
+        <div class="dakwah-card reveal">
+          <div class="dakwah-num" aria-hidden="true">04</div>
+          <h3 class="dakwah-title">Seni Ukir &amp; Pakaian</h3>
+          <p>Beliau memasukkan motif flora, dedaunan, dan kaligrafi dalam ukiran Jawa — menggantikan motif makhluk hidup yang sebelumnya dominan. Sunan Kalijaga juga memodifikasi pakaian adat Jawa menjadi <em>Baju Takwa</em> yang lebih tertutup sesuai syariat, yang kelak menjadi cikal bakal pakaian adat masyarakat Jawa modern.</p>
+          <div class="dakwah-tag">Seni Rupa</div>
+        </div>
+
+      </div>
+
+      <div class="dakwah-quote reveal">
+        <div class="quote-ornament" aria-hidden="true">"</div>
+        <blockquote>Melalui seni dan budaya, Sunan Kalijaga mengajarkan bahwa Islam adalah rahmat bagi semesta alam — bukan ancaman bagi tradisi, melainkan penyempurna nilai-nilai kebaikan yang telah ada.</blockquote>
+        <div class="quote-ornament quote-ornament-right" aria-hidden="true">"</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== WARISAN ====== -->
+  <section class="section" id="warisan">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">V</span>
+        <h2 class="section-title">Peninggalan &amp; Warisan</h2>
+        <div class="section-ornament" aria-hidden="true">✦ ✦ ✦</div>
+      </div>
+
+      <div class="warisan-layout">
+
+        <div class="warisan-left reveal">
+          <h3 class="warisan-subtitle">Tempat Bersejarah</h3>
+          <div class="warisan-place">
+            <div class="place-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20,5 L20,35 M10,15 L30,15 M8,35 L32,35" stroke="#C8963E" stroke-width="1.5" fill="none"/>
+                <path d="M14,15 L14,5 L20,2 L26,5 L26,15" stroke="#C8963E" stroke-width="1.2" fill="none"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Masjid Agung Demak</h4>
+              <p>Salah satu masjid tertua di Indonesia. Sunan Kalijaga ikut membantu pembangunannya dan menciptakan tiang utama dari serpihan kayu (soko tatal) yang melambangkan persatuan umat.</p>
+            </div>
+          </div>
+          <div class="warisan-place">
+            <div class="place-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="12" stroke="#C8963E" stroke-width="1.5" fill="none"/>
+                <path d="M20,8 L20,14 M20,26 L20,32 M8,20 L14,20 M26,20 L32,20" stroke="#C8963E" stroke-width="1.2"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Makam Sunan Kalijaga</h4>
+              <p>Terletak di Kadilangu, Demak. Sering dikunjungi masyarakat untuk berziarah dan mengenang perjuangan beliau dalam menyebarkan Islam di tanah Jawa.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="warisan-divider" aria-hidden="true"></div>
+
+        <div class="warisan-right reveal">
+          <h3 class="warisan-subtitle">Nilai Islam dalam Budaya Nusantara</h3>
+          <div class="nilai-list">
+            <div class="nilai-item">
+              <span class="nilai-icon" aria-hidden="true">◈</span>
+              <div>
+                <strong>Toleransi (Tasamuh)</strong>
+                <p>Dakwah dilakukan secara damai tanpa kekerasan atau penolakan paksa terhadap adat istiadat setempat — mewujudkan Islam sebagai rahmatan lil 'alamin.</p>
+              </div>
+            </div>
+            <div class="nilai-item">
+              <span class="nilai-icon" aria-hidden="true">◈</span>
+              <div>
+                <strong>Tauhid melalui Budaya</strong>
+                <p>Wayang pewayangan dijadikan media mengajarkan keesaan Allah. Jimat Kalimasada (Kalimat Syahadat) disematkan dalam lakon wayang secara halus dan bermakna.</p>
+              </div>
+            </div>
+            <div class="nilai-item">
+              <span class="nilai-icon" aria-hidden="true">◈</span>
+              <div>
+                <strong>Estetika Simbolik</strong>
+                <p>Pakaian adat, tembang, dan seni ukir dijadikan media dakwah yang sarat makna filosofis Islam — keindahan sebagai jalan menuju Tuhan.</p>
+              </div>
+            </div>
+            <div class="nilai-item">
+              <span class="nilai-icon" aria-hidden="true">◈</span>
+              <div>
+                <strong>Musyawarah &amp; Gotong Royong</strong>
+                <p>Diterapkan dalam pembangunan Masjid Agung Demak — di mana soko tatal (tiang dari serpihan kayu) melambangkan kekuatan dalam persatuan umat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tradisi yang Dipengaruhi -->
+      <div class="tradisi-section reveal">
+        <h3 class="tradisi-title">Lima Tradisi yang Dipengaruhi Sunan Kalijaga</h3>
+        <div class="tradisi-scroll">
+          <div class="tradisi-item">
+            <div class="tradisi-num" aria-hidden="true">1</div>
+            <h4>Wayang Kulit</h4>
+            <p>Mengubah bentuk wayang menjadi siluet pipih &amp; memasukkan cerita Islam</p>
+          </div>
+          <div class="tradisi-item">
+            <div class="tradisi-num" aria-hidden="true">2</div>
+            <h4>Sekaten &amp; Grebeg Maulud</h4>
+            <p>Tradisi perayaan kelahiran Nabi dengan arak-arakan gunungan hasil bumi</p>
+          </div>
+          <div class="tradisi-item">
+            <div class="tradisi-num" aria-hidden="true">3</div>
+            <h4>Tembang &amp; Lagu Dolanan</h4>
+            <p>"Lir-Ilir" dan "Gundul-Gundul Pacul" sarat pesan moral &amp; tasawuf</p>
+          </div>
+          <div class="tradisi-item">
+            <div class="tradisi-num" aria-hidden="true">4</div>
+            <h4>Seni Ukir</h4>
+            <p>Motif flora, dedaunan &amp; kaligrafi menggantikan motif makhluk hidup</p>
+          </div>
+          <div class="tradisi-item">
+            <div class="tradisi-num" aria-hidden="true">5</div>
+            <h4>Baju Takwa</h4>
+            <p>Pakaian adat Jawa dimodifikasi agar lebih tertutup sesuai syariat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== HIKMAH ====== -->
+  <section class="section section-alt" id="hikmah">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">VI</span>
+        <h2 class="section-title">Hikmah &amp; Pelajaran</h2>
+        <div class="section-ornament" aria-hidden="true">✦ ✦ ✦</div>
+      </div>
+
+      <div class="hikmah-grid">
+
+        <div class="hikmah-card reveal">
+          <div class="hikmah-icon" aria-hidden="true">
+            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30,10 Q50,10 50,30 Q50,50 30,50 Q10,50 10,30 Q10,10 30,10" stroke="#C8963E" stroke-width="1.5" fill="none"/>
+              <path d="M22,30 L27,35 L38,24" stroke="#C8963E" stroke-width="2" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Nilai Kehidupan</h3>
+          <p>Sunan Kalijaga mengajarkan: sabar, bijaksana, sederhana, dan peduli sesama tanpa memandang suku, budaya, maupun status sosial. Kisah transformasi Lokajaya menjadi Sunan Kalijaga membuktikan bahwa setiap manusia dapat berubah menjadi lebih baik apabila bertekad.</p>
+        </div>
+
+        <div class="hikmah-card reveal">
+          <div class="hikmah-icon" aria-hidden="true">
+            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="30" r="10" stroke="#C8963E" stroke-width="1.5" fill="none"/>
+              <circle cx="40" cy="30" r="10" stroke="#C8963E" stroke-width="1.5" fill="none"/>
+              <path d="M27,22 L33,22 M27,38 L33,38" stroke="#C8963E" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <h3>Toleransi &amp; Budaya</h3>
+          <p>Keberhasilan dakwah Sunan Kalijaga berakar pada toleransi terhadap budaya lokal. Beliau tidak menghapus tradisi, melainkan memasukkan nilai-nilai Islam ke dalamnya. Di Indonesia yang beragam, sikap saling menghormati dan menjaga persatuan adalah kunci kehidupan yang damai.</p>
+        </div>
+
+        <div class="hikmah-card reveal">
+          <div class="hikmah-icon" aria-hidden="true">
+            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15,45 L15,25 Q15,15 25,15 L35,15 Q45,15 45,25 L45,45" stroke="#C8963E" stroke-width="1.5" fill="none"/>
+              <circle cx="30" cy="28" r="6" stroke="#C8963E" stroke-width="1.2" fill="none"/>
+              <line x1="30" y1="34" x2="30" y2="45" stroke="#C8963E" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <h3>Relevansi di Era Modern</h3>
+          <p>Ajaran Sunan Kalijaga melampaui zamannya. Di era digital, generasi muda dapat meneladaninya dengan menggunakan media sosial, seni, dan teknologi untuk menyebarkan nilai-nilai kebaikan. Kreativitas dalam menyampaikan pesan positif adalah warisan abadi Sunan Kalijaga.</p>
+        </div>
+
+        <div class="hikmah-card reveal">
+          <div class="hikmah-icon" aria-hidden="true">
+            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30,12 L36,24 L50,26 L40,36 L42,50 L30,44 L18,50 L20,36 L10,26 L24,24 Z" stroke="#C8963E" stroke-width="1.5" fill="none"/>
+            </svg>
+          </div>
+          <h3>Pesan untuk Generasi Muda</h3>
+          <p>Jadilah pribadi yang jujur, rendah hati, kreatif, dan peduli sesama. Jaga dan lestarikan budaya lokal sebagai identitas bangsa. Gunakan ilmu dan teknologi dengan bijak untuk memberikan manfaat bagi masyarakat — seperti Sunan Kalijaga memanfaatkan seni di zamannya.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer-ornament" aria-hidden="true">
+      <svg viewBox="0 0 800 40" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,20 Q100,0 200,20 Q300,40 400,20 Q500,0 600,20 Q700,40 800,20" stroke="#C8963E" stroke-width="1" fill="none" opacity="0.4"/>
+      </svg>
+    </div>
+    <div class="footer-inner">
+      <div class="footer-logo" aria-hidden="true">
+        <span>❧</span>
+        <span>Sunan Kalijaga</span>
+        <span>❧</span>
+      </div>
+      <p class="footer-text">Disusun oleh Kelompok 2 PAI Kelas X.7</p>
+      <p class="footer-sub"><em>"Ilmu, budaya, dan toleransi dapat berjalan berdampingan."</em></p>
+      <div class="footer-divider" aria-hidden="true">✦ ✦ ✦</div>
+      <p class="footer-copy">Buku Interaktif · Kupas Tuntas Sunan Kalijaga</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
